@@ -43,4 +43,5 @@ var initialState = {
     // $slides: null,
 };
 
-module.exports = initialState;
+// module.exports = initialState;
+export default initialState;

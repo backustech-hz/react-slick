@@ -6,7 +6,14 @@ import assign from 'object-assign';
 import json2mq from 'json2mq';
 import defaultProps from './default-props';
 import canUseDOM from 'can-use-dom';
-const enquire = canUseDOM && require('enquire.js');
+// const enquire = canUseDOM && require('enquire.js');
+
+// modify 去除require
+import enquire1 from 'enquire.js';
+let enquire;
+if (canUseDOM) {
+  enquire = enquire1;
+}
 
 export default class Slider extends React.Component {
   constructor(props) {

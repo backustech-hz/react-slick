@@ -48,4 +48,5 @@ var defaultProps = {
     prevArrow: null
 };
 
-module.exports = defaultProps;
+// module.exports = defaultProps;
+export default defaultProps;
